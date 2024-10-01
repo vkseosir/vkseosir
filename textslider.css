@@ -1,0 +1,167 @@
+.hamburger {
+  margin-left: 93vw;
+  margin-top: -7vh;
+  display: none;
+}
+
+.hamburger i {
+  font-size: 2.2vw;
+  cursor: pointer;
+}
+
+
+/* navbar for mobile */
+
+.navbar-mobile {
+  background-color: var(--background2);
+  position: absolute;
+  z-index: 2;
+      margin-top: -30vh;
+      height: 100vh;
+  width: 100%;
+
+  display: none;
+}
+
+.navbar-mobile i {
+  font-size: 3vw;
+  color: var(--background);
+  margin-left: 75vw;
+
+}
+
+.close-icon {
+  margin-top: 5vh;
+  margin-left: 6vw;
+  cursor: pointer;
+
+
+}
+
+.navbar-mobile a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 3vw;
+  font-family: poppins;
+  display: flex;
+  justify-content: center;
+  margin-top: 4vh;
+  margin-bottom: 1vw;
+
+}
+
+/*  */
+.slider-part {
+  height: 75vh;
+  width: 100%;
+  margin-top: -3vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10vh;
+  margin-top: 5vh;
+  position: relative;
+color: #fff;
+}
+
+.text-part{
+  position: absolute;
+  z-index: 2;
+  margin-top: 1vh;
+  font-size: 1.4vw;
+}
+
+.swiper-slide img {
+display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+z-index: 1;
+}
+
+  @media (max-width:1250px){    
+
+
+/*  */
+.slider-part {
+  height: 38vh;
+  width: 100%;
+  margin-top: -5vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10vh;
+  margin-top: 5vh;
+  position: relative;
+color: #fff;
+}
+
+.text-part{
+  position: absolute;
+  z-index: 999;
+  margin-top: 3vh;
+  font-size: auto;
+  line-height: 2vh;
+}}
+
+
+
+
+/*  */
+
+
+/* responsive part */ 
+
+  /* end media for page1 */
+
+  @media (max-width:700px){
+
+  .slider-part {
+      height: 38vh;
+      width: 100%;
+      margin-top: -5vh;
+  }
+  
+  .swiper {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10vh;
+      margin-top: 5vh;
+      position: relative;
+  color: #fff;
+  }
+  
+  .text-part{
+      position: absolute;
+      z-index: 2;
+      margin-top: 3vh;
+      font-size: 3.3vw;
+      line-height: 2vh;
+  }
+}
+  
+
