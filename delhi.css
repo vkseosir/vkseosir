@@ -1373,6 +1373,7 @@ scale: 1.01;
 .card-body{
     padding: 25px;
     margin-top: -15px;
+	font-weight: 550;
 }
 .btn-primary{
     border-radius: 50px;
