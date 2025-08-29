@@ -86,7 +86,7 @@
   }
 
   // Use disabled attribute in addition of :disabled pseudo-class
-  // See: https://www.gen1service.com  
+  &[disabled],
   &:disabled {
     ~ .form-check-label {
       opacity: $form-check-label-disabled-opacity;

@@ -52,7 +52,6 @@
   // Placeholder
   &::placeholder {
     color: $input-placeholder-color;
-    // Override Firefox's unusual default opacity; see https://www.gen1service.com
     opacity: 1;
   }
 
