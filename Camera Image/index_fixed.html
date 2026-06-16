@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeApply – Premium Home Appliances</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style_fixed.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span>
+        HomeApply
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#products" class="nav-link">Our Service</a>
+        <a href="#" class="nav-link">Select City</a>
+        <a href="#" class="nav-link">About Us</a>
+        <a href="#" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+             
+        </button>
+        <button class="ham-btn" id="hamBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu — NAVBAR KE ANDAR RAKHHA HAI TAAKI SLIDER KE UPAR RAHE -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#" class="mob-link">Home</a>
+      <a href="#products" class="mob-link">Products</a>
+      <a href="#" class="mob-link">Offers</a>
+      <a href="#" class="mob-link">Service</a>
+      <a href="#" class="mob-link">Contact</a>
+     
+    </div>
+  </header>
+
+  <!-- ===== SLIDER ===== -->
+  <section class="slider-section" aria-label="Featured promotions">
+    <div class="slider-track" id="sliderTrack">
+
+      <!-- Slide 1 – AC -->
+      <div class="slide slide-1">
+        <img
+          class="slide-img"
+          src="https://www.gen1service.com/img/gen1service-regrigerator-slider.webp.webp"
+          alt="Smart Air Conditioner"
+        />
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-eyebrow">Best Home Appliances &mdash;Service Center</span>
+          <h2 class="slide-title">Stay cool this summer with our Smart ACs</h2>
+          <p class="slide-desc">5-star inverter ACs, free installation, 10-year compressor warranty.</p>
+          <div class="slide-actions">
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 – Fridge -->
+      <div class="slide slide-2">
+        <img
+          class="slide-img"
+          src="https://www.gen1service.com/img/gen1service-washing-machine-slider.webp"
+          alt="Smart Refrigerator"
+        />
+        <div class="slide-overlay" style="background:linear-gradient(90deg,rgba(30,58,138,0.82) 0%,rgba(37,99,235,0.4) 60%,transparent 100%)"></div>
+        <div class="slide-content">
+          <span class="slide-eyebrow">New Arrivals</span>
+          <h2 class="slide-title">Smart fridges built for modern kitchens</h2>
+          <p class="slide-desc">Double door, French door & side-by-side with AI cooling technology.</p>
+          <div class="slide-actions">
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 – Washing Machine -->
+      <div class="slide slide-3">
+        <img
+          class="slide-img"
+          src="https://www.gen1service.com/img/gen1service-main-slider.webp"
+          alt="Washing Machine"
+        />
+        <div class="slide-overlay" style="background:linear-gradient(90deg,rgba(120,53,15,0.85) 0%,rgba(217,119,6,0.45) 60%,transparent 100%)"></div>
+        <div class="slide-content">
+          <span class="slide-eyebrow">Bestseller</span>
+          <h2 class="slide-title">Washing machines that care for your clothes</h2>
+          <p class="slide-desc">AI wash programs, steam clean & hygiene rinse in front & top load.</p>
+          <div class="slide-actions">
+         
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="slider-arrow arrow-prev" id="arrowPrev" aria-label="Previous slide">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="slider-arrow arrow-next" id="arrowNext" aria-label="Next slide">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slide navigation"></div>
+  </section>
+
+  <!-- ===== PRODUCT CARDS ===== -->
+  <section class="products-section" id="products">
+    <div class="products-inner">
+      <div class="section-header">
+        <h2 class="section-title">Our Services</h2>
+      </div>
+
+      <div class="card-grid">
+
+        <!-- AC -->
+        <div class="product-card" data-color="green">
+          <div class="card-img-wrap">
+            <img
+              src="https://gen1service.com/images/ac.webp"
+              alt="Air Conditioner"
+              class="card-img"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card-title">Air Conditioner Repair Service Center</h3>
+          <p class="card-desc">Inverter split ACs, window ACs & cassette units. 5-star energy rated with fast cooling.</p>
+          <div class="card-footer">
+            <span class="card-price">From ₹28,990</span>
+            <a href="#" class="card-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Fridge -->
+        <div class="product-card" data-color="blue">
+          <div class="card-img-wrap">
+            <img
+              src="https://gen1service.com/images/fridge-repair-services.webp"
+              alt="Refrigerator"
+              class="card-img"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card-title">Refrigerator Repair Service Center</h3>
+          <p class="card-desc">Double door, side-by-side & French door fridges with smart inverter compressor.</p>
+          <div class="card-footer">
+            <span class="card-price">From ₹14,990</span>
+            <a href="#" class="card-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Washing Machine -->
+        <div class="product-card" data-color="amber">
+          <div class="card-img-wrap">
+            <img
+              src="https://gen1service.com/images/washing%20machine.webp"
+              alt="Washing Machine"
+              class="card-img"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card-title">Washing Machine Repair Service Center</h3>
+          <p class="card-desc">Front load & top load washers with AI wash programs and steam clean technology.</p>
+          <div class="card-footer">
+            <span class="card-price">From ₹12,490</span>
+            <a href="#" class="card-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Microwave -->
+        <div class="product-card" data-color="pink">
+          <div class="card-img-wrap">
+            <img
+              src="https://gen1service.com/images/microwave-repair-services.webp"
+              alt="Microwave Oven"
+              class="card-img"
+              loading="lazy"
+              style="object-position: center"
+            />
+          </div>
+          <h3 class="card-title">Microwave Oven Repair Service Center</h3>
+          <p class="card-desc">Solo, grill & convection microwaves for baking, grilling and quick reheating.</p>
+          <div class="card-footer">
+            <span class="card-price">From ₹6,990</span>
+            <a href="#" class="card-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Chimney -->
+        <div class="product-card" data-color="purple">
+          <div class="card-img-wrap">
+            <img
+              src="https://gen1service.com/images/chimney-repair-services.webp"
+              alt="Kitchen Chimney"
+              class="card-img"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card-title">Kitchen Chimney Repair Service Center</h3>
+          <p class="card-desc">Auto-clean chimneys with baffle filter, motion sensor & touch control panel.</p>
+          <div class="card-footer">
+            <span class="card-price">From ₹8,490</span>
+            <a href="#" class="card-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Hob -->
+        <div class="product-card" data-color="coral">
+          <div class="card-img-wrap">
+            <img
+              src="https://gen1service.com/images/hob-repair-services.webp"
+              alt="Kitchen Hob"
+              class="card-img"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card-title">Kitchen Hob Repair Service Center</h3>
+          <p class="card-desc">2, 3 & 4-burner glass-top hobs with auto-ignition and heavy brass burners.</p>
+          <div class="card-footer">
+            <span class="card-price">From ₹4,990</span>
+            <a href="#" class="card-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- ================= GEN1 SERVICE SLIDER START ================= -->
+
+<style>
+</style>
+
+<div class="gen1-slider">
+    <div class="slider-container">
+
+        <button class="nav-arrow prev">❮</button>
+        <button class="nav-arrow next">❯</button>
+
+        <div class="slider-wrapper">
+
+            <div class="slide-card">
+                <a href="#"><img src="https://www.gen1service.com/img/Expert-AC-repair-service.webp.webp" alt="AC Repair"></a>
+            </div>
+
+            <div class="slide-card">
+                <a href="#"><img src="https://www.gen1service.com/img/Expert-kitchen-appliances-repair-service.webp" alt="Kitchen Repair"></a>
+            </div>
+
+            <div class="slide-card">
+                <a href="#"><img src="https://www.gen1service.com/img/Expert-Fridge-repair-service.webp.webp" alt="Fridge Repair"></a>
+            </div>
+
+            <div class="slide-card">
+                <a href="#"><img src="https://www.gen1service.com/img/Expert-Washing-Machine-repair-service.webp" alt="Washing Machine Repair"></a>
+            </div>
+
+            <div class="slide-card">
+                <a href="#"><img src="https://www.gen1service.com/img/Expert-led-tv-repair-service.webp.webp" alt="LED TV Repair"></a>
+            </div>
+
+            <div class="slide-card">
+                <a href="#"><img src="https://www.gen1service.com/img/Expert-cctv-laptop-repair-service.webp" alt="CCTV Repair"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="dots-container"></div>
+</div>
+
+
+<!-- ================= GEN1 SERVICE SLIDER END ================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Review Slider</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* =========================
+   REVIEW SECTION
+========================= */
+
+.vk-review-wrap{
+    width:100%;
+    max-width:1150px;
+    margin:45px auto;
+    padding:0 15px;
+}
+
+.vk-review-title{
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#222;
+    margin-bottom:25px;
+}
+
+/* Slider */
+
+.vk-review-box{
+    overflow:hidden;
+}
+
+#vkReviewSlider987{
+    display:flex;
+    gap:18px;
+    transition:0.5s ease;
+}
+
+.vk-review-card{
+    min-width:calc(33.333% - 12px);
+    background:#fff;
+    border:1px solid #e7e7e7;
+    border-radius:8px;
+    padding:18px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.vk-review-head{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.vk-review-avatar{
+    width:50px;
+    height:50px;
+    background:#0b4a90;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
+    margin-right:12px;
+}
+
+.vk-review-head h3{
+    font-size:15px;
+    color:#333;
+    margin-bottom:4px;
+}
+
+.vk-review-head p{
+    font-size:13px;
+    color:#777;
+}
+
+.vk-review-text{
+    font-size:14px;
+    line-height:26px;
+    color:#444;
+    min-height:90px;
+}
+
+.vk-stars{
+    margin-top:15px;
+    color:#0b4a90;
+    font-size:15px;
+    letter-spacing:2px;
+}
+
+/* Dots */
+
+.vk-review-dots{
+    text-align:center;
+    margin-top:22px;
+}
+
+.vk-review-dot{
+    width:10px;
+    height:10px;
+    background:#c2cfda;
+    border-radius:50%;
+    display:inline-block;
+    margin:0 4px;
+    cursor:pointer;
+}
+
+.vk-review-dot.active{
+    background:#0b4a90;
+}
+
+/* Tablet */
+
+@media(max-width:900px){
+
+    .vk-review-title{
+        text-align:center;
+        font-size:18px;
+    }
+
+    .vk-review-card{
+        min-width:calc(50% - 9px);
+    }
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .vk-review-wrap{
+        margin:35px auto;
+    }
+
+    .vk-review-title{
+        text-align:center;
+        font-size:18px;
+        margin-bottom:20px;
+    }
+
+    .vk-review-card{
+        min-width:100%;
+        padding:18px;
+    }
+
+    .vk-review-avatar{
+        width:50px;
+        height:50px;
+        font-size:20px;
+    }
+
+    .vk-review-head h3{
+        font-size:16px;
+    }
+
+    .vk-review-head p{
+        font-size:13px;
+    }
+
+    .vk-review-text{
+        font-size:14px;
+        line-height:26px;
+        min-height:auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="vk-review-wrap">
+
+    <h2 class="vk-review-title">
+        WHAT OUR CUSTOMERS SAY
+    </h2>
+
+    <div class="vk-review-box">
+
+        <div id="vkReviewSlider987">
+
+            <!-- Review 1 -->
+            <div class="vk-review-card">
+                <div class="vk-review-head">
+                    <div class="vk-review-avatar">V</div>
+
+                    <div>
+                        <h3>Vikas Sharma</h3>
+                        <p>Meerut - Partapur</p>
+                    </div>
+                </div>
+
+                <div class="vk-review-text">
+                    Same-day gas stove repair in Partapur.
+                    Ignition issue and gas smell problem were
+                    fixed properly with complete safety check.
+                </div>
+
+                <div class="vk-stars">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="vk-review-card">
+                <div class="vk-review-head">
+                    <div class="vk-review-avatar">N</div>
+
+                    <div>
+                        <h3>Neha Gupta</h3>
+                        <p>Meerut - Abu Lane</p>
+                    </div>
+                </div>
+
+                <div class="vk-review-text">
+                    Reliable hob repair service in Abu Lane.
+                    Genuine spare parts were used and pricing
+                    was reasonable compared to other centers.
+                </div>
+
+                <div class="vk-stars">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="vk-review-card">
+                <div class="vk-review-head">
+                    <div class="vk-review-avatar">T</div>
+
+                    <div>
+                        <h3>Tanmay Jain</h3>
+                        <p>Meerut - Saket</p>
+                    </div>
+                </div>
+
+                <div class="vk-review-text">
+                    Fast and professional gas hob repair in
+                    Saket. Technician cleaned the burners and
+                    restored proper flame stability.
+                </div>
+
+                <div class="vk-stars">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="vk-review-card">
+                <div class="vk-review-head">
+                    <div class="vk-review-avatar">A</div>
+
+                    <div>
+                        <h3>Amit Verma</h3>
+                        <p>Meerut - Shastri Nagar</p>
+                    </div>
+                </div>
+
+                <div class="vk-review-text">
+                    Excellent service and quick response.
+                    The gas stove was repaired in a single visit
+                    and everything worked perfectly.
+                </div>
+
+                <div class="vk-stars">
+                    ★★★★★
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Dots -->
+    <div class="vk-review-dots">
+        <span class="vk-review-dot active"></span>
+        <span class="vk-review-dot"></span>
+        <span class="vk-review-dot"></span>
+        <span class="vk-review-dot"></span>
+    </div>
+
+</section>
+
+<script>
+const vkReviewSlider987 =
+document.getElementById("vkReviewSlider987");
+
+const vkReviewDots987 =
+document.querySelectorAll(".vk-review-dot");
+
+let vkReviewIndex987 = 0;
+
+function moveVkReviewSlider987(){
+
+    const card =
+    document.querySelector(".vk-review-card");
+
+    const cardWidth =
+    card.offsetWidth + 18;
+
+    vkReviewSlider987.style.transform =
+    `translateX(-${vkReviewIndex987 * cardWidth}px)`;
+
+    vkReviewDots987.forEach(dot=>{
+        dot.classList.remove("active");
+    });
+
+    vkReviewDots987[
+        vkReviewIndex987 %
+        vkReviewDots987.length
+    ].classList.add("active");
+}
+
+setInterval(()=>{
+
+    vkReviewIndex987++;
+
+    if(window.innerWidth <= 600){
+
+        if(vkReviewIndex987 > 3)
+            vkReviewIndex987 = 0;
+
+    }else if(window.innerWidth <= 900){
+
+        if(vkReviewIndex987 > 2)
+            vkReviewIndex987 = 0;
+
+    }else{
+
+        if(vkReviewIndex987 > 1)
+            vkReviewIndex987 = 0;
+    }
+
+    moveVkReviewSlider987();
+
+},3000);
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0B2545;
+  --navy-mid:#1A3A6B;
+  --green:#18A558;
+  --green-light:#E8F7EE;
+  --green-dark:#0D7A3F;
+  --accent:#F4A020;
+  --text:#1C2B3A;
+  --muted:#5A6A7A;
+  --border:#DDE4EC;
+  --bg:#F5F8FC;
+  --white:#FFFFFF;
+  --radius:12px;
+  --radius-sm:8px;
+}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);line-height:1.6;font-size:15px}
+
+/* ── SECTION BASE ── */
+.section{padding:70px 20px}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-tag{display:inline-block;background:var(--green-light);color:var(--green-dark);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:12px}
+.section-title{font-family:'Poppins',sans-serif;font-size:clamp(22px,4vw,36px);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:10px}
+.section-sub{font-size:15px;color:var(--muted);max-width:560px}
+.center-text{text-align:center}
+.center-text .section-sub{margin:0 auto}
+
+
+
+
+
+/* ── FAQ ── */
+.faq-list{
+  margin-top:42px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  max-width:1100px;
+  margin-left:auto;
+  margin-right:auto
+}
+.faq-item{border:1px solid var(--border);border-radius:var(--radius);background:var(--white);overflow:hidden;height:fit-content}
+.faq-q{width:100%;background:none;border:none;padding:16px 18px;text-align:left;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-q:hover{background:var(--bg)}
+.faq-chevron{width:18px;height:18px;flex-shrink:0;transition:transform .3s;stroke:var(--green);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.faq-item.open .faq-chevron{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.open .faq-a{max-height:300px}
+.faq-a-inner{padding:0 18px 16px;font-size:13px;color:var(--muted);line-height:1.6;border-top:1px solid var(--border)}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);color:rgba(255,255,255,0.75);padding:60px 20px 30px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:50px}
+.footer-brand p{font-size:13.5px;line-height:1.7;margin-top:12px;color:rgba(255,255,255,0.55);max-width:260px}
+.footer-logo{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:#fff}
+.footer-logo span{color:#5EE89A}
+.footer-col h5{color:#fff;font-size:14px;font-weight:600;margin-bottom:16px;letter-spacing:.02em}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul li a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13.5px;transition:color .2s}
+.footer-col ul li a:hover{color:var(--green)}
+.contact-item{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:rgba(255,255,255,0.55);margin-bottom:12px}
+.contact-icon{width:20px;height:20px;stroke:#5EE89A;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:1px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.10);padding-top:24px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;font-size:13px;color:rgba(255,255,255,0.4)}
+.footer-bottom a{color:rgba(255,255,255,0.4);text-decoration:none;transition:color .2s}
+.footer-bottom a:hover{color:var(--green)}
+.social-links{display:flex;gap:12px}
+.social-link{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;transition:background .2s;text-decoration:none}
+.social-link:hover{background:var(--green)}
+.social-link svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .hero{padding:60px 16px 80px}
+  .section{padding:50px 16px}
+  .faq-list{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:25px}
+  .footer-brand{grid-column:1/-1}
+}
+@media(max-width:500px){
+  .footer-grid{grid-template-columns:1fr 1fr;gap:20px}
+  .footer-brand{grid-column:1/-1}
+  .footer-col h5{font-size:13px;margin-bottom:12px}
+  .footer-col ul li a,.contact-item{font-size:12px}
+}
+</style>
+</head>
+<body>
+
+
+<!-- ── FAQ ── -->
+<section class="section" id="faq" style="background:var(--bg)">
+  <div class="section-inner">
+    <div class="center-text">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Got a question? We've got answers. If you need more help, just call us.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How quickly can a technician come to my home?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We offer same-day doorstep repair service. Once you book, a technician is assigned within 1–2 hours and will reach your location as per your preferred time slot. In most cities, we cover morning, afternoon, and evening slots.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Which home appliances do you repair?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We repair a wide range of home appliances including Air Conditioners, Washing Machines, Refrigerators, Gas Stoves &amp; Hobs, LED/LCD TVs, Water Purifiers (RO), Microwave Ovens, and Dishwashers. All major brands are supported.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you use genuine spare parts?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, absolutely. We use only original and certified spare parts for all repairs. The part quality and its cost are shared with you transparently before replacement — no surprises.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is there a warranty on the repair service?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes! All our repair jobs come with a service warranty. If the same issue recurs within the warranty period, we will revisit and fix it at no extra cost. Warranty terms vary by appliance and repair type.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How is the service charge calculated?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We follow a transparent pricing model. A nominal visiting/inspection charge applies when the technician arrives. After diagnosing the issue, you receive a full cost estimate covering labour and parts — you decide whether to proceed before any work begins.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Which cities are covered by Gen1Service?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We currently operate in 50+ cities across India including Delhi, Noida, Ghaziabad, Meerut, Agra, Lucknow, Varanasi, Kanpur, and many more. We are expanding rapidly — contact us to check availability in your city.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How do I book a repair service?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Booking is simple! You can call us directly, fill the booking form on our website, or WhatsApp us. Share your appliance issue, location, and preferred time — we'll handle the rest and confirm your booking within minutes.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BAND ── -->
+<section style="background:var(--green);padding:30px 20px;text-align:center">
+  <h2 style="font-family:'Poppins',sans-serif;font-size:clamp(18px,3vw,28px);font-weight:700;color:#fff;margin-bottom:10px">Ready to Get Your Appliance Fixed Today?</h2>
+  <p style="color:rgba(255,255,255,0.82);font-size:14px;margin-bottom:18px">Same-day doorstep service • Genuine parts • Warranty guaranteed</p>
+  <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
+    <a href="tel:+919999999999" style="background:#fff;color:var(--green-dark);font-weight:700;font-size:14px;padding:11px 22px;border-radius:8px;text-decoration:none">📞 Call Now</a>
+    <a href="#" style="background:transparent;color:#fff;font-weight:500;font-size:14px;padding:10px 22px;border-radius:8px;border:1.5px solid rgba(255,255,255,0.5);text-decoration:none">💬 WhatsApp Us</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Gen1<span>Service</span></div>
+        <p>India's fast-growing home appliance repair network. Trusted by 2500+ customers for same-day, professional, doorstep service across 50+ cities.</p>
+        <div class="social-links" style="margin-top:20px">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#why-us">Why Gen1Service</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">AC Repair</a></li>
+          <li><a href="#">Washing Machine</a></li>
+          <li><a href="#">Refrigerator Repair</a></li>
+          <li><a href="#">Gas Stove Repair</a></li>
+          <li><a href="#">TV Repair</a></li>
+          <li><a href="#">Water Purifier</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <div class="contact-item">
+          <svg class="contact-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a2 2 0 011.4-2.18l3-.9"/></svg>
+          <span>+91 99999 99999</span>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>support@gen1service.in</span>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>50+ Cities across India</span>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Mon – Sun: 8:00 AM – 9:00 PM</span>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script>
+
+// ── FAQ ──
+function toggleFaq(btn){
+  const item = btn.closest('.faq-item');
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if(!wasOpen) item.classList.add('open');
+}
+</script>
+
+
+
+
+  <!-- ===== FOOTER STRIP ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo" style="font-size:16px"><i class="fa-solid fa-bolt" style="color:#22c55e"></i> HomeApply</span>
+      <p>&copy; 2025 HomeApply. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script_fixed.js"></script>
+</body>
+</html>
+
+
+
